@@ -1,0 +1,131 @@
+   *{
+    font-family: "Harry Potter", cursive;
+    
+  }  
+   body {
+       background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://i.pinimg.com/1200x/61/c6/42/61c642c66844e8b5393b72f1ee917101.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        text-align: center;
+        margin: 0;
+        min-height: 100vh;
+      }
+      .potions {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .potions h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #ffd700;
+        text-shadow: 1px 1px 10px rgb(208, 214, 26);
+          letter-spacing: 3px;
+      }
+      .potions p {
+ 
+        letter-spacing: 1.5px;
+  
+        line-height: 1.6;
+
+      }
+
+      .potion-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .potion-card {
+        background: rgba(0, 0, 0, 0.381);
+        border-radius: 15px;
+        overflow: hidden;
+        width: 260px;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      .potion-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #ffd700;
+      }
+
+      .potion-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .potion-info {
+        padding: 15px;
+        text-align: left;
+      }
+
+      .potion-info h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #ffcc00;
+      }
+
+      .potion-info p {
+        font-size: 14px;
+        margin: 5px 0;
+      }
+
+      @media (max-width: 900px) {
+        .potion-card {
+          width: 200px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .potion-card {
+          width: 160px;
+        }
+        .potion-info h2 {
+          font-size: 18px;
+        }
+        .potion-info p {
+          font-size: 12px;
+        }
+      }
+      .navbar {
+  position: sticky;
+  padding: 15px;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffb22c;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+footer p {
+  text-shadow: 0 0 10px #fff;
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
